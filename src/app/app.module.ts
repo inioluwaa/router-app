@@ -13,9 +13,10 @@ import { ServerComponent } from './servers/server/server.component';
 import { ServersService } from './servers/servers.service';
 import {RouterModule, Routes} from '@angular/router';
 
-const appRoutes: Routes =[
+const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'users/:id/:name', component: UserComponent },
   { path: 'servers', component: ServersComponent }
 ];
 
